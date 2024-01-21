@@ -67,7 +67,7 @@ import java.util.*;
             while (i == 0);
         }
 }*/ 
-public class problems{
+/*public class problems{
     public static int Power( int x, int n){
         int result =1;
         for(int i = 0; i<n;i++){
@@ -86,4 +86,38 @@ public class problems{
        System.out.println("the result of "+ x +" raised to the power "+ n +" is "+res);
 
     }
-}
+}*/
+public class problems{
+    public static int FindGcd( int x, int y){
+        if (x != y){
+            if (x % y != 0){
+                return x % y;
+
+            }
+            if (x % y == 0 && x < y){
+                return x;
+            }
+               else {
+                    return y;
+                }
+            }
+
+        else {
+            return x;
+        }
+        
+        }
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter  number");
+            int x = sc.nextInt();
+            System.out.println("enter another number");
+            int y = sc.nextInt();
+
+            int gcd = FindGcd(x, y);
+            System.out.println("greatest common divisor of numbers is " + gcd);
+            
+        }
+    }
+
+
