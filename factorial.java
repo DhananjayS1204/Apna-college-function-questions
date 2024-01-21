@@ -1,5 +1,5 @@
 import java.util.*;
-public class fact {
+public class factorial {
 
   public static int factorial( int n){
     if (n == 1){
@@ -18,15 +18,8 @@ public class fact {
     Scanner sc = new Scanner(System.in);
     int n = sc.nextInt();
 
-    if(n>0){
-
-
     int fact = factorial(n);
     System.out.println("factorial of given number is " + fact);
-    }
-    else{
-        System.out.println("invalid number");
-    }
 
 
   }
