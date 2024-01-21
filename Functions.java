@@ -14,15 +14,10 @@ public class Functions{
     }
     public static void main (String args[]){
         Scanner sc = new Scanner(System.in);
+        System.out.println(sc);
         int n = sc.nextInt(); 
 
         SumOfOdd(n);
-
-         
-       
-
-
-
     }
  
  
