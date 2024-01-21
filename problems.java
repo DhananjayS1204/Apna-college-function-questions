@@ -39,7 +39,7 @@ import java.util.*;
             System.out.println("circumference of circle is " + cir);
         }
     }*/
-    public class problems{
+    /*public class problems{
         public static void Voting(int n){
             if (n >= 18){
                 System.out.println("you are eligible to vote");
@@ -56,4 +56,34 @@ import java.util.*;
             
             Voting(n);
         }
+    }*/
+/*public class problems{
+        public static void main(String[] args) {
+            int i = 0;
+            do{
+                System.out.println("This is an infinite loop");
+            
+            }
+            while (i == 0);
+        }
+}*/ 
+public class problems{
+    public static int Power( int x, int n){
+        int result =1;
+        for(int i = 0; i<n;i++){
+            result *= x;
+        }
+        return result;
     }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the base");
+        int x = sc.nextInt();
+        System.out.println("Enter the exponent");
+        int n = sc.nextInt();
+
+       int res = Power(x,n);
+       System.out.println("the result of "+ x +" raised to the power "+ n +" is "+res);
+
+    }
+}
