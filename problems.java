@@ -67,7 +67,7 @@ import java.util.*;
             while (i == 0);
         }
 }*/ 
-public class problems{
+/*public class problems{
     public static int Power( int x, int n){
         int result =1;
         for(int i = 0; i<n;i++){
@@ -85,5 +85,49 @@ public class problems{
        int res = Power(x,n);
        System.out.println("the result of "+ x +" raised to the power "+ n +" is "+res);
 
+    } 
+}*/
+/*public class problems{ 
+    public static void SumOfOdd(int n){
+        int sum =0;
+        for(int i = 1; i <= n; i++){
+            if(i % 2 != 0){
+                sum = sum + i;
+ 
+            }
+             
+        }
+        System.out.println(sum); 
+    }
+    public static void main (String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(); 
+
+       SumOfOdd(n);
+       
+    }
+}*/
+public class problems {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int largest = 0;
+        int number;
+        System.out.println("Enter numbers");
+        do {
+            number =  sc.nextInt();
+            if (number != 0 && (number > largest || largest == 0)){
+               largest = number;
+            }
+        }
+        while (number != 0);
+        if(largest != 0){
+            System.out.println("Largest number is " + largest);
+        }
+        else{
+            System.out.println("Invalid numbers entered");
+        }
     }
 }
+
